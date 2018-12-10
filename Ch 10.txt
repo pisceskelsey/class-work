@@ -1,0 +1,89 @@
+filename = guest.txt
+
+with open(filename, 'george') as file_object:
+    file_object.write("Welcome to the hotel, George!")
+    file_object.write("We hope you enjoy your stay!")
+while:    
+    guest = prompt("Please enter your name: ")
+    print(guest + ", welcome to the resort!")
+    
+filename = 'programing.txt'
+
+with open(filename, 'w') as file_object:
+    file_object.write("I love programing!")
+    file_object.write("I love to program files.")
+    file_object.write("I love to access files easily.")
+    file_object.write("I like learning new coding languages.")
+    
+print("I can add any numbers you give me.")
+print("Enter 'q' to quit.")
+
+while True:
+    first_number = input("\nFirst Number: ")
+    if first_number == 'q':
+        break
+    second_number = input("\nSecond number: ")
+    if second_number == 'q':
+        break
+    answer = int(first_number)+(second_number)
+    print(answer)
+    
+    
+filename = 'cats.txt'
+with open(filename, 'w') as file_object:
+    file_object.write('Fluffy')
+    file_object.write('Sushi')
+    file_object.write('Whiskers')
+    
+filename = 'dogs.txt'
+with open(filename, 'w') as file_object:
+    file_object.write('Biscuit')
+    file_object.write('Fido')
+    file_object.write('Wags')
+
+else:
+    print("That file does not exist.")
+    
+except FileNotFoundError:
+    break
+    
+filename = 'Gutenberg.txt'
+def count_words(filename)
+try:
+    with open(filename, encoding= 'utf-8') as f_obj:
+        contents = f_obj.read()
+except FileNotFoundError:
+    msg = "Sorry, the file does not exist."
+    print(msg)
+else:
+    words = contents.split()
+    num_words = len(words)
+    print("This file has " + str(num_words) + " instances of the word 'the'.")
+    
+import json
+
+favorite_number = input("What is your favorite number? ")
+
+filename = 'number.json'
+with open(filename, 'w') as f_obj:
+    json.dump(number, f_obj)
+    print("Your favorite number is " + number + "!")
+    
+    
+import json
+
+filename = 'username.json'
+try:
+    with open(filename) as f_obj:
+        username = json.load(f_obj)
+except FileNotFoundError:
+    username = input("What is your name? ")
+    with open(filename, 'w') as f_obj:
+        json.dump(username, f_obj)
+        print("We'll save your name for next time!")
+else:
+    print("Welcome back!")
+    
+    
+
+
